@@ -1,6 +1,6 @@
 var map = L.map('map').setView([51.505, -0.09], 13);
 
-var L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
@@ -43,5 +43,6 @@ fetch('/data/airports.geojson')
 // var options = { units: "miles" };
 
 // var distance = turf.distance(from, to, options);
+
 
 
